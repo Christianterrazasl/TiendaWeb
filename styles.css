@@ -1,0 +1,52 @@
+
+body{
+    font-family: roboto, 'Trebuchet MS';
+}
+
+.header-lines{
+    position: relative;
+}
+
+
+.lineaArriba{
+    display: flex;
+    background-color: white;
+    justify-content: flex-end;
+    font-size: 12px;
+    
+}
+
+
+
+.lineaAbajo{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    font-size: 12px;
+    
+}
+
+.lineaArriba h2{
+    padding: 10px 10px;
+    cursor: pointer;
+    margin: 0;
+
+}
+
+.lineaArriba h2:hover{
+    background-color: black;
+    color: white;
+}
+
+.lineaAbajo h2{
+    color: white;
+}
+
+.header-lines img{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 80px;
+}
