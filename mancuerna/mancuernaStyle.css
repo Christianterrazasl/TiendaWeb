@@ -1,0 +1,176 @@
+body{
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+
+}
+
+
+.lineaArriba{
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+    border-bottom: 4px solid black;
+}
+
+.lineaArribaTitulo{
+    color: white;
+    font-size: 15px;
+    margin: 10px;
+    background-color: rgb(145, 145, 145);
+    padding: 10px;
+    border-radius: 5%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.lineaArriba-logoPortada{
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+
+}
+
+.producto{
+    padding: 5px;
+}
+
+.imgContainer{
+    position: relative;
+    height: 50px;
+}
+.tituloProducto{
+    font-size: 30px;
+}
+.imagenProducto{
+    width: 100%;
+    border: 1px solid black;
+}
+.descrProducto{
+    font-size: 20px;
+    color: gray;
+}
+.listaEsp li{
+    font-size: 20px;
+    color: gray;
+}
+.compra{
+    background-color: rgb(204, 204, 204);
+    padding: 10px;
+}
+.btnCompra{
+    margin: 10px;
+    margin-bottom: 100px;
+    background-color: rgb(45, 163, 70);
+    color: white;
+    border: 2px solid black;
+    border-radius: 5%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.cantidad{
+    font-size: 20px;
+    width: 100px;
+    padding: 10px;
+}
+
+@media screen and (min-width: 769px){
+    body{
+        background-color: black;
+        padding: 0;
+        margin: 0;
+        font-family: Roboto, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .lineaArriba{
+        margin-top: 0px;
+        display: flex;
+        justify-content: end;
+    }
+    
+    .lineaArribaTitulo{
+        color: white;
+        font-size: 15px;
+        margin: 0px;
+        background-color: black;
+        padding: 15px;
+        border-radius: 0;
+        border: none;
+        
+    }
+    .lineaArribaTitulo:hover{
+        background-color: #fff;
+        color: black;
+    }
+    .imgContainer{
+        border-top: none;
+        border-bottom: none;
+        width: 10%;
+        position: relative;
+        margin-top: 0px;
+        height: 0px;
+    }
+    .lineaArriba-logoPortada{
+        width: 70px;
+        position: absolute;
+        left: 50%;
+        top: -30px;
+        transform: translateX(-50%);
+    
+    }
+    .tituloProducto{
+        font-size: 45px;
+        color: white;
+        margin-left: 40px;
+        margin-top: 50px;
+
+    }
+    .imagenProducto{
+        width: 50%;
+        border: none;
+        float: left;
+        margin-right: 60px;
+    }
+    .descrProducto{
+        font-size: 30px;
+        color: gray;
+    }
+    .listaEsp li{
+        font-size: 30px;
+        color: gray;
+    }
+    .compra{
+        background-color: rgb(204, 204, 204);
+        padding: 10px;
+    }
+    .btnCompra{
+        margin: 10px;
+        margin-bottom: 100px;
+        background-color: rgb(45, 163, 70);
+        color: white;
+        border: 2px solid black;
+        border-radius: 5%;
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    .cantidad{
+        font-size: 20px;
+        width: 100px;
+        padding: 10px;
+    }
+}
+
+@media screen and (480px < width < 769px){
+    .imagenProducto{
+        width: 50%;
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 20px;
+        border: none;
+    }
+}
+

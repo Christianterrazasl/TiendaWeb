@@ -1,0 +1,204 @@
+body{
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+
+}
+
+
+.lineaArriba{
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+    border-bottom: 4px solid black;
+}
+
+.lineaArribaTitulo{
+    color: white;
+    font-size: 15px;
+    margin: 10px;
+    background-color: rgb(145, 145, 145);
+    padding: 10px;
+    border-radius: 5%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.lineaArriba-logoPortada{
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+
+}
+.imgContainer{
+    position: relative;
+    height: 50px;
+}
+
+.tituloCatalogo{
+    font-size: 35px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.itemsContainer{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.itemCatalogo{
+    width: 40%;
+    max-width: 100%;
+    padding: 5px;
+    background-color: #bebebe;
+    border-radius: 5%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+.itemCatalogo img{
+    width: 90%;
+    border-bottom: 1px solid black;
+}
+.btnDetalles{
+    background-color: #ffffff;
+    margin-bottom: 5px;
+}
+.btnComprar{
+    background-color: #24a12e;
+    color: white;
+}
+
+.contacto{
+    background-color: #9e9e9e;
+    padding: 20px;
+}
+
+.tituloContacto{
+    margin-top: 0;
+}
+
+.contacto input, .contacto textarea{
+    margin-top: 10px;
+}
+
+.btnEnviarContacto{
+    background-color: #317c27;
+    border: none;
+    color: #fff;
+    padding: 10px;
+
+}
+
+@media screen and (min-width: 769px){
+    body{
+        background-color: black;
+        padding: 0;
+        margin: 0;
+        font-family: Roboto, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .lineaArriba{
+        margin-top: 0px;
+        display: flex;
+        justify-content: end;
+    }
+    
+    .lineaArribaTitulo{
+        color: white;
+        font-size: 20px;
+        margin: 0px;
+        background-color: black;
+        padding: 15px;
+        border-radius: 0;
+        border: none;
+        
+    }
+    .lineaArribaTitulo:hover{
+        background-color: #fff;
+        color: black;
+    }
+    .imgContainer{
+        border-top: none;
+        border-bottom: none;
+        width: 10%;
+        position: relative;
+        margin-top: 0px;
+        height: 0px;
+    }
+    .lineaArriba-logoPortada{
+        width: 70px;
+        position: absolute;
+        left: 50%;
+        top: -30px;
+        transform: translateX(-50%);
+    
+    }
+    .tituloCatalogo{
+        font-size: 35px;
+        text-decoration: none;
+        margin-left: 10%;
+        color: white;
+    }
+    .itemsContainer{
+        padding-top: 20px;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: start;
+        background-color: #fff;
+    }
+    
+    .itemCatalogo{
+        width: 50%;
+        max-width: 50%;
+        padding: 5px;
+        background-color: #bebebe;
+        border-radius: 5%;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border: 2px solid rgba(0, 0, 0, 0.5);
+        align-items: center;
+    }
+    .itemCatalogo img{
+        width: 50%;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+    }
+    
+    .tituloItem{
+        width: 500px;
+        margin: 30px;
+    }
+    
+    .btnDetalles{
+        background-color: #ffffff;
+        margin-bottom: 0px;
+        width: 50%;
+        height: 40px;
+        margin-right: 20px;
+    }
+    .btnComprar{
+        background-color: #24a12e;
+        color: white;
+        width: 50%;
+        height: 40px;
+        margin-right: 20px;
+        
+    }
+    .btnDetalles:hover, .btnComprar:hover{
+        background-color: black;
+        color: white;
+    }
+
+}
