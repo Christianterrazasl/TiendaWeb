@@ -79,7 +79,7 @@ body{
 
 .banner{
     width: 100%;
-    background-image: url(../imagenes/portada2.webp);
+    background-image: url(/portada2.webp);
     background-size: cover;
     background-position: center;
     position: relative;
