@@ -93,7 +93,7 @@ body{
     
     .lineaArribaTitulo{
         color: white;
-        font-size: 15px;
+        font-size: 25px;
         margin: 0px;
         background-color: black;
         padding: 15px;
@@ -114,7 +114,7 @@ body{
         height: 0px;
     }
     .lineaArriba-logoPortada{
-        width: 70px;
+        width: 80px;
         position: absolute;
         left: 50%;
         top: -30px;

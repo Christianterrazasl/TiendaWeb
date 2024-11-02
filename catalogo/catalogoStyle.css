@@ -60,7 +60,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: end;
-    border: 2px solid rgba(0, 0, 0, 0.5);
+    border: none;
+    padding-bottom: 10px;
 }
 .itemCatalogo img{
     width: 90%;
@@ -69,10 +70,12 @@ body{
 .btnDetalles{
     background-color: #ffffff;
     margin-bottom: 5px;
+    border: none;
 }
 .btnComprar{
     background-color: #24a12e;
     color: white;
+    border: none;
 }
 
 .contacto{
@@ -86,6 +89,7 @@ body{
 
 .contacto input, .contacto textarea{
     margin-top: 10px;
+    width: 80%;
 }
 
 .btnEnviarContacto{
@@ -107,11 +111,12 @@ body{
         margin-top: 0px;
         display: flex;
         justify-content: end;
+        margin-right: 20px;
     }
     
     .lineaArribaTitulo{
         color: white;
-        font-size: 20px;
+        font-size: 25px;
         margin: 0px;
         background-color: black;
         padding: 15px;
@@ -132,7 +137,7 @@ body{
         height: 0px;
     }
     .lineaArriba-logoPortada{
-        width: 70px;
+        width: 80px;
         position: absolute;
         left: 50%;
         top: -30px;
@@ -157,28 +162,29 @@ body{
     }
     
     .itemCatalogo{
-        width: 50%;
-        max-width: 50%;
-        padding: 5px;
+        width: 22%;
+        max-width: 24%;
+        padding: 10px;
         background-color: #bebebe;
         border-radius: 5%;
         margin-bottom: 30px;
-        margin-left: 20px;
+        margin-left: 0px;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        border: 2px solid rgba(0, 0, 0, 0.5);
+        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
+        border: none;
+        height: 400px;
     }
     .itemCatalogo img{
-        width: 50%;
-        border-bottom: 1px solid black;
-        border-right: 1px solid black;
+        height: 50%;
+        border: none;        
     }
     
     .tituloItem{
-        width: 500px;
-        margin: 30px;
+        width: 95%;
+        margin: 20px;
+        font-size: 25px;
     }
     
     .btnDetalles{
@@ -199,6 +205,24 @@ body{
     .btnDetalles:hover, .btnComprar:hover{
         background-color: black;
         color: white;
+    }
+
+    .contacto input {
+        margin-top: 10px;
+        width: 30%;
+    }
+
+    .contacto h2{
+        font-size: 40px;
+    }
+
+    .contacto input, .contacto textarea{
+        height: 33px;
+        font-size: 20px;
+    }
+    .contacto textarea{
+        width: 50%;
+        height: 200px;   
     }
 
 }
