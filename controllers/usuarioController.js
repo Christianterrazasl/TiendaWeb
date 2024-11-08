@@ -1,4 +1,5 @@
 const usuarioRepo = require('../repositories/usuarioRepo');
+const carritoRepo = require('../repositories/carritoRepo');
 
 exports.login = async (req, res) => {
     try {
@@ -26,9 +27,18 @@ exports.register = async (req, res)=>{
     try{
         const {nombre, email, contrasena} = req.body;
         await usuarioRepo.register(nombre, email, contrasena);
-        return res.status(201).send(`Usuario ${nombre} registrado`);
+        
+        const user = await usuarioRepo.getUsuarioByNombre(nombre);
+        if (user && user.id) {
+            await carritoRepo.crearCarrito(user.id);
+            return res.status(201).send(`Usuario ${nombre} registrado y carrito creado.`);
+        } else {
+            return res.status(500).send('Error al obtener usuario después de registro');
+        }
+
+        
     }
     catch(err){
-        res.status(500).send('Creacion de usuario fallo');
+        return res.status(500).send('Creacion de usuario fallo');
     }
 };
