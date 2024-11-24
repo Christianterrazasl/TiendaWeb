@@ -1,10 +1,9 @@
 const usuarioRepo = require('../repositories/usuarioRepo');
-const carritoRepo = require('../repositories/carritoRepo');
 
 exports.login = async (req, res) => {
     try {
-        const { nombre, contrasena } = req.body;
-        const user = await usuarioRepo.getUsuarioByNombre(nombre);
+        const { username, contrasena } = req.body;
+        const user = await usuarioRepo.getUsuarioByUsername(username);
         
         if (!user) {
             return res.status(401).send('Nombre o contraseña incorrectos');
@@ -25,20 +24,24 @@ exports.login = async (req, res) => {
 
 exports.register = async (req, res)=>{
     try{
-        const {nombre, email, contrasena} = req.body;
-        await usuarioRepo.register(nombre, email, contrasena);
-        
-        const user = await usuarioRepo.getUsuarioByNombre(nombre);
-        if (user && user.id) {
-            await carritoRepo.crearCarrito(user.id);
-            return res.status(201).send(`Usuario ${nombre} registrado y carrito creado.`);
-        } else {
-            return res.status(500).send('Error al obtener usuario después de registro');
-        }
+        const usuario = req.body;
+        const usernameDuplicado = await usuarioRepo.getUsuarioByUsername(usuario.username);
+        if(usernameDuplicado){
+            return res.status(400).send('Username ya esta en uso');
 
-        
+        }
+        const respuesta = await usuarioRepo.register(usuario);
+        if(!respuesta){
+            return res.status(500).send('Error al insertar usuario');
+        }
+        const usuarioObtenido = await usuarioRepo.getUsuarioByUsername(usuario.username);
+        if(usuarioObtenido){
+            delete usuarioObtenido.contrasena;
+            return res.json(usuarioObtenido);
+        }
+        return res.status(201)
     }
     catch(err){
-        return res.status(500).send('Creacion de usuario fallo');
+        return res.status(500).send('Creacion de usuario fallida');
     }
 };

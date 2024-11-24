@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titan Ironworks index</title>
-    <link rel="stylesheet" href="index/indexStyle.css">
+    <link rel="stylesheet" href="css/indexStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -12,8 +12,9 @@
 </head>
 <body>
     <div class="header-lines">
-        
         <div class="lineaArriba">
+            <h2 id="mensajeUserInSession" class="lineaArribaTitulo"></h2>
+            <input type="button" class="lineaArribaTitulo" id="btnCerrarSesion" value="Cerrar Sesion" onclick="cerrarSesion()">
             <h2 class="lineaArribaTitulo" id="iniciarSesion">INICIAR SESION</h2>
             <h2 class="lineaArribaTitulo" id="registrarse">REGISTRARSE</h2>
         </div>
@@ -24,9 +25,9 @@
         <div class="lineaAbajo">
             <h2 class="lineaAbajoTitulo" id="switchMenu">&#x2193</h2>
             <div class="esconder">
-                <h2 class="lineaAbajoTitulo" id="catalogo"><a href="catalogo/catalogo.html">CATALOGO</a></h2>
+                <h2 class="lineaAbajoTitulo" id="catalogo"><a href="catalogo.html">CATALOGO</a></h2>
                 <h2 class="lineaAbajoTitulo">GIMNASIOS</h2>
-                <h2 class="lineaAbajoTitulo">QUIENES SOMOS</h2>
+                <h2 class="lineaAbajoTitulo"><a href="#quienesSomos">QUIENES SOMOS</a></h2>
                 <h2 class="lineaAbajoTitulo"><a href="#panelContacto">CONTACTO</a></h2>
             
             </div>
@@ -41,9 +42,18 @@
             
             <h2 class="tituloSecundarioBanner">EQUIPAMIENTO<br> PARA <br>CAMPEONES</h2>
             <p class="parrafoBanner">Proveemos equipos<br> de entrenamiento<br> a los mejores gimnasios<br> de Santa Cruz</p>
-            <input type="button" value="¡Hace tu pedido!" class="botonBanner" onclick="window.location.href='catalogo/catalogo.html';">
+            <input type="button" value="¡Hace tu pedido!" class="botonBanner" onclick="window.location.href='catalogo.html';">
         </div>
     </div>
+    <section id="quienesSomos">
+        <h2 class="quienesSomosTitle">¿QUIENES SOMOS?</h2>
+        <div class="quienesSomosParrafos">
+            <p class="quienesSomosParrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim debitis odit eligendi natus nulla. 
+                Minus voluptas quam vero unde distinctio qui voluptatem ipsa facilis earum, aperiam at error vitae sapiente.</p>
+            <p class="quienesSomosParrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim debitis odit eligendi natus nulla. 
+                 Minus voluptas quam vero unde distinctio qui voluptatem ipsa facilis earum, aperiam at error vitae sapiente.</p>
+        </div>
+    </section>
     <section class="productosPopulares">
         <h1 class="tituloPopulares">PRODUCTOS POPULARES</h1>
         <figure class="carrucelPopulares">
@@ -67,7 +77,19 @@
         <input type="button" class="btnCarrucel" id="btnPrev" value="&#10094">
     </section>
     <section class="influencers">
-        
+        <h1 class="influencersTitle">NUESTROS PROMOTORES</h1>
+        <div class="influencerContainer">
+            <article class="influencer">
+                <img src="imagenes/userLogo.png" alt="foto de influencer promotor" class="influencerFoto">
+                <h2 class="influencerName">Juan Perez</h2>
+                <p class="influencerInstagram">@Jperez</p>
+            </article>
+            <article class="influencer">
+                <img src="imagenes/userLogo.png" alt="foto de influencer promotor" class="influencerFoto">
+                <h2 class="influencerName">Maria Martinez</h2>
+                <p class="influencerInstagram">@Mmartinez</p>
+            </article>
+        </div>
     </section>
     <section class="contacto" id="panelContacto">
         <form>
@@ -103,6 +125,6 @@
         </div>
     </section>
 
-    <script src="index/scriptIndex.js"></script>
+    <script src="js/scriptIndex.js"></script>
 </body>
 </html>

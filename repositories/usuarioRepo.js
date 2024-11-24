@@ -1,8 +1,8 @@
 const db = require('../db');
 
-exports.getUsuarioByNombre = async (nombre)=>{
+exports.getUsuarioByUsername = async (username)=>{
     try{
-        const result = await db.query('select * from usuario where nombre = $1', [nombre]);
+        const result = await db.query('select * from usuario where username = $1', [username]);
         if (result.rows.length === 0){ return null;}
         return result.rows[0];
     }
@@ -12,10 +12,11 @@ exports.getUsuarioByNombre = async (nombre)=>{
     }
 }
 
-exports.register = async(nombre, email, contrasena)=>{
+exports.register = async(usuario)=>{
     try{
-        await db.query('insert into usuario (nombre, email, contrasena) values ($1, $2, $3)',[nombre, email, contrasena]);
-
+        
+        const resultado = await db.query('insert into usuario (nombre, username, contrasena) values ($1, $2, $3) returning id',[usuario.nombre, usuario.username, usuario.contrasena]);
+        return resultado.rows[0].id;
     }
     catch(err){
         console.error(err);

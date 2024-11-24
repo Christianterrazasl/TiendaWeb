@@ -1,0 +1,177 @@
+body,html{
+    margin:0;
+    padding: 0;
+    font-family: Roboto, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-color: black;
+}
+#headerLines{
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    padding-top: 60px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.headerLinesTitle{
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    cursor: pointer;
+    
+
+}
+#msgUserInSession, #btnCerrarSesion{
+    display: none;
+}
+#btnCerrarSesion{
+    background-color: #fff;
+    border: none;
+    color: black;
+}
+
+#btnLogin, #btnRegister{
+    border: solid 1px gray;
+    border-radius: 5px;
+}
+#imagenLogo{
+    width: 60px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+#titulo{
+    background-color: whitesmoke;
+    margin: 0;
+    border-bottom: 1px solid black;
+
+}
+#tituloPagina{
+    padding: 30px;
+    margin: 0;
+}
+.producto{
+    background-color: whitesmoke;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.productoPrecioUnitario{
+
+}
+
+.cantidadProducto{
+    max-width: 10%;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.btnEliminar{
+    max-width: 15%;
+    padding: 10px 0px;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.cantidadProducto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cantidadProductoInput{
+    width: 25px;
+}
+.productoTitle{
+    margin:0;
+    padding: 10px;
+    font-size: 20px;    
+    max-width: 20%;
+
+}
+.imagenProducto{
+    display: none;
+}
+
+#items{
+    background-color: #fff;
+}
+#finalCompra{
+    background-color: black;
+
+}
+
+#precioTotal{
+    padding: 15px;
+}
+
+#finalCompra *{
+    color:#fff;
+}
+
+#finalCompra input{
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+#btnComprar{
+    background-color: green;
+}
+#btnVaciar{
+    background-color: gray;
+}
+
+@media screen and (min-width: 769px) {
+    .imagenProducto{
+        display: block;
+        max-width: 10%;
+    }
+    .headerLinesTitle{
+        font-size: 25px;
+        color: white;
+        background-color: black;
+        padding: 15px;
+        
+    
+    }
+    #imagenLogo{
+        width: 150px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+
+    .producto *{
+        font-size: 30px;
+    }
+    .cantidadProductoInput{
+        width: 100px;
+    }
+    #finalCompra input{
+        border: 1px solid whitesmoke;
+        border-radius: 5px;
+        padding: 15px;
+        margin: 15px;
+        font-size: 30px;
+    }
+    #precioTotal{
+        padding: 15px;
+        font-size: 30px;
+    }
+    #msgUserInSession, #btnCerrarSesion{
+        display: none;
+        min-width: 200px;
+    }
+
+}
