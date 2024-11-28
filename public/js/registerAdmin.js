@@ -1,14 +1,21 @@
 (function(){
-    document.querySelector('#btnLogin').addEventListener('click', (e)=>{
+    document.querySelector('#btnRegister').addEventListener('click', (e)=>{
         e.preventDefault();
 
+        const inputNombre = document.querySelector('#nombre');
         const inputUsername = document.querySelector('#username');
         const inputContrasena = document.querySelector('#contrasena');
+        const msgNombre = document.querySelector('#validationNombre');
         const msgUser = document.querySelector('#validationUser');
         const msgContrasena = document.querySelector('#validationContra');
+        
 
 
         let hayError = false;
+        if(inputNombre.value.trim() === ""){
+            msgNombre.style.display='block';
+            hayError=true;
+        }
         if(inputUsername.value.trim() === ""){
             msgUser.style.display='block';
             hayError=true;
@@ -20,11 +27,12 @@
         if(hayError)return;
 
         const usuario = {
+            "nombre" : inputNombre.value,
             "username" : inputUsername.value,
             "contrasena" : inputContrasena.value
         }
 
-        fetch('api/usuario/login',
+        fetch('api/usuario/registerAdmin',
             {
                 method: 'POST',
                 headers: {
@@ -45,14 +53,8 @@
                 msgUser.style.display='block';
                 return;
             }
-            if(data.esadmin){
-                localStorage.setItem("userInSession", JSON.stringify(data));
-                document.location.href = "indexAdmin.html";
-                return;
-            }
             localStorage.setItem("userInSession", JSON.stringify(data));
-            document.location.href = "index.html";
-            return;
+            document.location.href = "indexAdmin.html";
         })
         .catch((error) => {
             msgUser.innerHTML = "Usuario o contraseña son invalidos";

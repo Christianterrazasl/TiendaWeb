@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index para administradores</title>
+    <link rel="stylesheet" href="css/indexAdmins.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2>Index para administradores</h2>
+        <input type="button" value="Cerrar sesion" id="btnCerrarSesion">
+        
+    </header>
+    <section id="ordenes">
+        <div class="datosTitulo">
+            <h3>Ordenes</h3>
+            <div>
+                <label for="mostrarOrdenes" id="labelMostrarOrdenes">Mostrar ordenes</label>
+                <input type="checkbox" id="mostrarOrdenes" checked>
+            </div>
+            
+        </div>
+    </section>
+    <section id="administradores">
+        <div class="datosTitulo">
+            <h3>Admins</h3>
+            <input type="button" id="btnAgregarAdmin" value="Agregar +" onclick="document.location.href='registerAdmin.html'">
+        </div>
+    </section>
+    <section id="categorias">
+        <div class="datosTitulo">
+            <h3>Categorias</h3>
+            <input type="button" id="btnAgregarCategoria" value="Agregar +">
+        </div>
+    </section>
+
+    <section id="productos">
+        <div class="datosTitulo">
+            <h3>Productos</h3>
+            <input type="button" id="btnAgregarProducto" value="Agregar +">
+        </div>
+    </section>
+    <script src="js/indexAdmins.js"></script>
+</body>
+</html>

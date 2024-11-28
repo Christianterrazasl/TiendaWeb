@@ -32,6 +32,8 @@ body{
     background-color: #fff;
     border: none;
     color: black;
+    font-weight: bold;
+    border-bottom: 1px solid black;
 }
 
 #btnLogin, #btnRegister{
@@ -58,8 +60,10 @@ body{
     background-color: whitesmoke;
     padding: 10px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
+    border-bottom: 1px solid black;
 }
 
 
@@ -80,6 +84,7 @@ body{
     border: none;
     color: white;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 .cantidadProducto{
@@ -87,6 +92,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
 .cantidadProductoInput{
     width: 25px;
@@ -94,8 +100,9 @@ body{
 .productoTitle{
     margin:0;
     padding: 10px;
-    font-size: 20px;    
-    max-width: 20%;
+    font-size: 15px;    
+    
+    
 
 }
 .imagenProducto{
@@ -132,6 +139,7 @@ body{
     background-color: gray;
 }
 
+
 @media screen and (min-width: 769px) {
     .imagenProducto{
         display: block;
@@ -144,6 +152,15 @@ body{
         padding: 15px;
         
     
+    }
+    .producto{
+        background-color: whitesmoke;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid black;
     }
     #imagenLogo{
         width: 150px;

@@ -1,0 +1,99 @@
+body{
+    font-family: Roboto, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.orden{
+    background-color: rgb(207, 207, 207);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    
+}
+
+#mostrarOrdenes{
+    display: none;
+}
+#labelMostrarOrdenes{
+    background-color: #fff;
+    color: black;
+    padding:10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.categoria {
+    background-color: rgb(207, 207, 207);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.datosTitulo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.administrador{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btnEliminarAdmin{
+    background-color: red;
+    color: white;
+    max-width: 20%;
+}
+.producto{
+    background-color: rgb(207, 207, 207);
+    padding: 10px;
+    border: 1px solid black;
+}
+.btnEliminar, .btnEliminar{
+    background-color: red;
+    color: white;
+}
+
+@media (min-width: 769px){
+    .datosTitulo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: white;
+        font-size: 25px;
+        padding: 25px;
+    }
+
+    .datosTitulo input{
+        font-size: 25px;
+        padding: 10px;
+    }
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 25px;
+    }
+    .producto, .categoria, .producto input, .categoria input{
+        font-size: 25px;
+
+    }
+
+    header input{
+        font-size: 25px;
+    }
+    .orden{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}

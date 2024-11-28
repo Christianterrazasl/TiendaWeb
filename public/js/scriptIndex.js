@@ -4,12 +4,13 @@ const btnIniciarSesion = document.querySelector('#iniciarSesion');
 const btnRegistrarse = document.querySelector('#registrarse');
 const mensajeUserInSession = document.querySelector('#mensajeUserInSession');
 const btnCerrarSesion = document.querySelector('#btnCerrarSesion');
+const listaOrdenes = document.querySelector('#listaOrdenes');
 
 
 const userInSession = localStorage.getItem("userInSession");
 if(userInSession){
     const userInfo = JSON.parse(userInSession);
-    console.log('Usuario en sesion iniciada');
+    
 
     
     btnCerrarSesion.style.display='block';
@@ -18,6 +19,7 @@ if(userInSession){
     mensajeUserInSession.style.display='block';
     btnIniciarSesion.style.display='none';
     btnRegistrarse.style.display='none';
+    listaOrdenes.style.display = 'block';
 
 
 }

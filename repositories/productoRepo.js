@@ -23,3 +23,48 @@ exports.getProductoById = async (id)=>{
         return null;
     }
 }
+
+exports.getCategorias = async ()=>{
+    try{
+        result = await db.query('Select * from categorias');
+        return result.rows;
+    }
+    catch(err){
+        console.error(err);
+        return null;
+    }
+}
+
+exports.addCategoria = async (nombre)=>{
+    try{
+        result = await db.query('insert into categorias (nombre) values ($1)',[nombre]);
+        return true;
+    }
+    catch(err){
+        console.error(err);
+        return null;
+    }
+}
+
+exports.deleteCategoria = async (id)=>{
+    try{
+        result = await db.query('delete from categorias where id = $1',[id]);
+        return true;
+    }
+    catch(err){
+        console.error(err);
+        return null;
+    }
+}
+
+exports.deleteProducto = async (id)=>{
+    try{
+        result = await db.query('delete from producto where id = $1',[id]);
+        return true;
+    }
+    catch(err){
+        console.error(err);
+        return null;
+    }
+}
+

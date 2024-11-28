@@ -29,6 +29,9 @@ body{
     display: none;
 
 }
+#listaOrdenes{
+    display: none;
+}
 
 .lineaAbajoTitulo a{
     text-decoration: none;

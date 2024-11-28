@@ -1,0 +1,81 @@
+body,html{
+    margin:0;
+    padding: 0;
+    font-family: Roboto, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-color: white;
+}
+#headerLines{
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    padding-top: 60px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.headerLinesTitle{
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    cursor: pointer;
+    
+
+}
+#msgUserInSession, #btnCerrarSesion{
+    display: none;
+}
+#btnCerrarSesion{
+    background-color: #fff;
+    border: none;
+    color: black;
+}
+
+#btnLogin, #btnRegister{
+    border: solid 1px gray;
+    border-radius: 5px;
+}
+#imagenLogo{
+    width: 60px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.orden{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+.productos{
+    background-color: rgb(216, 216, 216);
+}
+
+@media screen and (min-width: 769px) {
+    
+    .headerLinesTitle{
+        font-size: 25px;
+        color: white;
+        background-color: black;
+        padding: 15px;
+        
+    
+    }
+    #imagenLogo{
+        width: 150px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+
+    .orden{
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        padding: 15px;
+    }
+}

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de compra</title>
-    <link rel="stylesheet" href="css/carrito.css">
+    <title>Lista de ordenes</title>
+    <link rel="stylesheet" href="css/listaOrdenes.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -14,25 +14,17 @@
         <h1 id="btnLogin" class="headerLinesTitle">INICIAR SESION</h1>
         <h1 id="btnRegister" class="headerLinesTitle">REGISTRARSE</h1>
         <h1 id="msgUserInSession" class="headerLinesTitle"></h1>
-        <input type="button" class="headerLinesTitle" value="Cerrar Sesion" id="btnCerrarSesion">
+        <input type="button" class="headerLinesTitle" value="Salir" id="btnCerrarSesion">
         <a href="index.html"><img src="imagenes/logo.png" alt="logo de la empresa" id="imagenLogo"></a>
+
     </section>
-    <section id="titulo"><h2 id="tituloPagina">Carrito de compra</h2></section>
-    <section id="items">
+
+    <section id="titulo">
+        <h2 id="listaOrdenesTitle"> Listado de ordenes</h2>
+    </section>
+    <section id="ordenes">
         
-
     </section>
-    <section id="finalCompra">
-        <h1 id="precioTotal"></h1>
-        <br>
-        <input type="button" value="Comprar" id="btnComprar">
-        <input type="button" value="Vaciar Carrito" id="btnVaciar">
-
-
-
-    </section>
-
-
-    <script src="js/carrito.js"></script>
+    <script src="js/listaOrdenes.js"></script>
 </body>
 </html>
