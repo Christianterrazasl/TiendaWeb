@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titan Ironworks index</title>
-    <link rel="stylesheet" href="css/indexStyle.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -24,29 +24,21 @@
         </div>
 
         <div class="lineaAbajo">
-            <h2 class="lineaAbajoTitulo" id="switchMenu">&#x2193</h2>
-            <div class="esconder">
-                <h2 class="lineaAbajoTitulo" id="catalogo"><a href="catalogo.html">CATALOGO</a></h2>
-                <h2 class="lineaAbajoTitulo">GIMNASIOS</h2>
-                <h2 class="lineaAbajoTitulo"><a href="#quienesSomos">QUIENES SOMOS</a></h2>
-                <h2 class="lineaAbajoTitulo"><a href="#panelContacto">CONTACTO</a></h2>
-                <h2 class="lineaAbajoTitulo"><a href="listaOrdenes.html" id="listaOrdenes">MIS ORDENES</a></h2>
-
-            
-            </div>
+            <h2 class="lineaAbajoTitulo" id="catalogo">CATALOGO</h2>
+            <h2 class="lineaAbajoTitulo">GIMNASIOS</h2>
+            <h2 class="lineaAbajoTitulo">QUIENES SOMOS</h2>
+            <h2 class="lineaAbajoTitulo">CONTACTO</h2>
+            <h2 class="lineaAbajoTitulo" id="listaOrdenes">MIS ORDENES</h2>
             <img src="imagenes/logoCarritoDeCompra.png" alt="carrito de compra" class="logoCarritoBanner" onclick="document.location.href='carrito.html'">
         </div>
         
     </div>
     <div class="banner">
         <div class="fondoOscuroBanner"></div>
-        <div class="contenidoBanner">
-            <h1 class="tituloPrincipalBanner">TITAN<br> <span>IRONWORKS</span></h1>
-            
-            <h2 class="tituloSecundarioBanner">EQUIPAMIENTO<br> PARA <br>CAMPEONES</h2>
-            <p class="parrafoBanner">Proveemos equipos<br> de entrenamiento<br> a los mejores gimnasios<br> de Santa Cruz</p>
-            <input type="button" value="¡Hace tu pedido!" class="botonBanner" onclick="window.location.href='catalogo.html';">
-        </div>
+        <h1 class="tituloPrincipalBanner">TITAN IRONWORKS</h1>
+        <h2 class="tituloSecundarioBanner">EQUIPAMIENTO PARA CAMPEONES</h2>
+        <p class="parrafoBanner">Proveemos equipos de entrenamiento a los mejores gimnasios de Santa Cruz</p>
+        <input type="button" value="¡Hace tu pedido!" class="botonBanner" onclick="window.location.href='catalogo.html';">
     </div>
     <section id="quienesSomos">
         <h2 class="quienesSomosTitle">¿QUIENES SOMOS?</h2>
@@ -56,28 +48,6 @@
             <p class="quienesSomosParrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim debitis odit eligendi natus nulla. 
                  Minus voluptas quam vero unde distinctio qui voluptatem ipsa facilis earum, aperiam at error vitae sapiente.</p>
         </div>
-    </section>
-    <section class="productosPopulares">
-        <h1 class="tituloPopulares">PRODUCTOS POPULARES</h1>
-        <figure class="carrucelPopulares">
-            <div class="itemCarrucel">
-                <img src="imagenes/squatRack1.png" alt="squat rack">
-                <h2>Squat rack - 500Bs.</h2>
-                <input type="button" class="btnComprarCarrucel" value="Comprar">
-            </div>
-            <div class="itemCarrucel"><img src="imagenes/latPulldown1.png" alt="lat machine">
-                <h2>Lat Pulldown - 500Bs.</h2>
-                <input type="button" class="btnComprarCarrucel" value="Comprar"></div>
-            <div class="itemCarrucel"><img src="imagenes/dumbells1.png" alt="mancuernas">
-                <h2>Mancuernas - 500Bs.</h2>
-                <input type="button" class="btnComprarCarrucel" value="Comprar"></div>
-            <div class="itemCarrucel"><img src="imagenes/rackDiscos.png" alt="rack de discos">
-                <h2>Rack de pesas - 500Bs.</h2>
-                <input type="button" class="btnComprarCarrucel" value="Comprar"></div>
-
-        </figure>
-        <input type="button" class="btnCarrucel" id="btnNext" value="&#10095">
-        <input type="button" class="btnCarrucel" id="btnPrev" value="&#10094">
     </section>
     <section class="influencers">
         <h1 class="influencersTitle">NUESTROS PROMOTORES</h1>
@@ -95,13 +65,15 @@
         </div>
     </section>
     <section class="contacto" id="panelContacto">
+        <h2 class="tituloContacto">CONTACTANOS</h2>
         <form>
-            <h2 class="tituloContacto">CONTACTANOS</h2>
-            <input type="text" placeholder="Nombre" class="nombreContacto"><br>
-            <input type="email" placeholder="Email" class="emailContacto"><br>
-            <textarea placeholder="Quisiera informacion de: "></textarea><br>
+            <h2>Nombre:</h2><br>
+            <input type="text" class="nombreContacto"><br>
+            <h2>Email:</h2><br>
+            <input type="email" class="emailContacto"><br>
+            <h2>Quisiera informacion de:</h2><br>
+            <textarea></textarea><br>
             <input type="button" value="Enviar" class="btnEnviarContacto">
-
         </form> 
     </section>
     <section class="referencias">
