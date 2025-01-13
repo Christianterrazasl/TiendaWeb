@@ -1,0 +1,56 @@
+#headerLines{
+    background-color: black;
+    padding: 1%;
+}
+
+#upperHeaderLine, #bottomHeaderLine{
+    display: flex;
+
+}
+
+#upperHeaderLine{
+    justify-content: end;
+    gap: 2%;
+    align-items: center;
+}
+#bottomHeaderLine{
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.headerLineTitle{
+    color: white;
+    margin: 0;
+    padding: 1%;
+
+}
+
+.headerLineTitle:hover{
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+}
+
+#imgCarrito{
+    width: 3%;
+    filter: invert();
+
+    
+}
+
+#imgCarrito:hover{
+    background-color: white;
+    filter: none;
+    cursor: pointer;
+}
+
+#btnLogout{
+    display: none;
+}
+
+#btnOrders{
+    display: none;
+}
+
+
