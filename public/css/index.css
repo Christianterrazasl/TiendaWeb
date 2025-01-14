@@ -9,7 +9,7 @@ body{
 
 #banner{
     height: 70vh;
-    background-color: blue;
+    
     background-image: url('/imagenes/portada2.webp');
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,7 +47,7 @@ body{
 #btnBanner{
     position: absolute;
     bottom: 10%;
-    right: 10%;
+    right: 20%;
 
 }
 .btnGreen{
@@ -66,4 +66,165 @@ body{
     width: 100%;
     height: 100%;
     
+}
+#quienesSomos{
+    background-image: linear-gradient(134deg, rgba(1, 1, 1,0.02) 0%, rgba(1, 1, 1,0.02) 16%,transparent 16%, transparent 76%,rgba(58, 58, 58,0.02) 76%, rgba(58, 58, 58,0.02) 100%),linear-gradient(215deg, rgba(166, 166, 166,0.02) 0%, rgba(166, 166, 166,0.02) 33%,transparent 33%, transparent 79%,rgba(111, 111, 111,0.02) 79%, rgba(111, 111, 111,0.02) 100%),linear-gradient(303deg, rgba(215, 215, 215,0.02) 0%, rgba(215, 215, 215,0.02) 7%,transparent 7%, transparent 90%,rgba(192, 192, 192,0.02) 90%, rgba(192, 192, 192,0.02) 100%),linear-gradient(302deg, rgba(113, 113, 113,0.02) 0%, rgba(113, 113, 113,0.02) 34%,transparent 34%, transparent 73%,rgba(65, 65, 65,0.02) 73%, rgba(65, 65, 65,0.02) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+
+    padding: 3%;
+
+}
+#imgQuienesSomos{
+    width: 40%;
+}
+
+#quienesSomosTitle{
+    font-size: 2rem;
+}
+
+#quienesSomosP{
+    font-size: 1.5rem;
+    width: 50%;
+}
+
+#quienesSomosContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#influencers{
+    background-color: black;
+    color: white;
+    padding: 3%;
+}
+
+#influencers img{
+    filter: invert();
+}
+
+#influencersTitle{
+    font-size: 2rem;
+}
+
+#influencersContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.influencer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 3%;
+    width: 40%;
+}
+
+.influencerFoto{
+    width: 30%;
+}
+
+@media (width<1024px){
+    #banner{
+        height: 70vh;
+        
+        background-image: url('/imagenes/portada2.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    
+    }
+    
+    #bannerTitle{
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.356);
+        transform: translateX(-50%);
+        padding: 10px;
+    }
+    #bannerTitle2{
+        position: absolute;
+        color: white;
+        right: 10%;
+        top: 5%;
+        font-size: 2rem;
+        text-align: right;
+        background-color: rgba(0, 0, 0, 0.301);
+        padding: 10px;
+        display: none;
+    }
+    #bannerP{
+        position: absolute;
+        right: 10%;
+        top: 40%;
+        color: white;
+        font-size: 1.5rem;
+        text-align: right;
+        display: none;
+    }
+    #btnBanner{
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        transform: translate(50%, 50%);
+        font-size: 1.5rem;
+    
+    }
+
+    #quienesSomosTitle{
+        font-size: 1.5rem;
+    }
+
+    #quienesSomos{
+        background-image: linear-gradient(134deg, rgba(1, 1, 1,0.02) 0%, rgba(1, 1, 1,0.02) 16%,transparent 16%, transparent 76%,rgba(58, 58, 58,0.02) 76%, rgba(58, 58, 58,0.02) 100%),linear-gradient(215deg, rgba(166, 166, 166,0.02) 0%, rgba(166, 166, 166,0.02) 33%,transparent 33%, transparent 79%,rgba(111, 111, 111,0.02) 79%, rgba(111, 111, 111,0.02) 100%),linear-gradient(303deg, rgba(215, 215, 215,0.02) 0%, rgba(215, 215, 215,0.02) 7%,transparent 7%, transparent 90%,rgba(192, 192, 192,0.02) 90%, rgba(192, 192, 192,0.02) 100%),linear-gradient(302deg, rgba(113, 113, 113,0.02) 0%, rgba(113, 113, 113,0.02) 34%,transparent 34%, transparent 73%,rgba(65, 65, 65,0.02) 73%, rgba(65, 65, 65,0.02) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+    
+        padding: 3%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+
+    #quienesSomosContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+        gap: 20px;
+
+
+    }
+
+    #quienesSomosP{
+        font-size: 1rem;
+        width: 90%;
+        text-align: center;
+    }
+
+    #banner{
+        height: 70vh;
+        
+        background-image: url('/imagenes/portada2.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background-position: 50%;
+    
+    }
+
+    #influencersTitle{
+        font-size: 1.5rem;
+
+    }
+
+    .influencerName{
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }

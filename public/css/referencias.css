@@ -1,0 +1,26 @@
+#referencias{
+    background-color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 3%;
+}
+
+.referenciasTitle{
+    font-size: 2rem;
+
+
+}
+
+
+@media (width<1024px){
+
+    .referenciasTitle{
+        font-size: 1.2rem;
+    }
+
+    #referencias{
+        font-size: 1rem;
+    }
+}

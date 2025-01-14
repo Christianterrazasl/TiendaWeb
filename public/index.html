@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/headerLines.css">
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/referencias.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -41,16 +43,19 @@
     </div>
     <section id="quienesSomos">
         <h2 id="quienesSomosTitle">¿QUIENES SOMOS?</h2>
-        <div id="quienesSomosParrafos">
-            <p class="quienesSomosParrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim debitis odit eligendi natus nulla. 
-                Minus voluptas quam vero unde distinctio qui voluptatem ipsa facilis earum, aperiam at error vitae sapiente.</p>
-            <p class="quienesSomosParrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim debitis odit eligendi natus nulla. 
-                 Minus voluptas quam vero unde distinctio qui voluptatem ipsa facilis earum, aperiam at error vitae sapiente.</p>
+        <div id="quienesSomosContainer">
+            <div id="quienesSomosP">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At doloribus adipisci maiores, voluptatibus ipsam voluptatem eum dignissimos illum libero qui nesciunt eaque accusamus delectus quod voluptatum rem aliquam unde! Cum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi ducimus dolor non delectus nam explicabo quia aut saepe enim, aperiam a magni odit! Labore eum ut voluptas minus, perspiciatis saepe?
+                 
+             </div>
+             <img src="imagenes/userLogo.png" alt="logo de usuario" id="imgQuienesSomos">
+
         </div>
+        
     </section>
-    <section class="influencers">
-        <h1 class="influencersTitle">NUESTROS PROMOTORES</h1>
-        <div class="influencerContainer">
+    <section id="influencers">
+        <h1 id="influencersTitle">NUESTROS PROMOTORES</h1>
+        <div id="influencersContainer">
             <article class="influencer">
                 <img src="imagenes/userLogo.png" alt="foto de influencer promotor" class="influencerFoto">
                 <h2 class="influencerName">Juan Perez</h2>
@@ -63,38 +68,38 @@
             </article>
         </div>
     </section>
-    <section class="contacto" id="panelContacto">
-        <h2 class="tituloContacto">CONTACTANOS</h2>
-        <form>
+    <section id="contacto">
+        <h2 id="contactoTitle">CONTACTANOS</h2>
+        <form id="contactoForm">
             <h2>Nombre:</h2><br>
-            <input type="text" class="nombreContacto"><br>
+            <input type="text" id="nombreContacto"><br>
             <h2>Email:</h2><br>
-            <input type="email" class="emailContacto"><br>
+            <input type="email" id="emailContacto"><br>
             <h2>Quisiera informacion de:</h2><br>
             <textarea></textarea><br>
-            <input type="button" value="Enviar" class="btnEnviarContacto">
+            <input type="button" value="Enviar" id="btnEnviarContacto" class="btnGreen">
         </form> 
     </section>
-    <section class="referencias">
-        <div class="sucursales">
-            <h1 class="tituloReferencias">SUCURSALES</h1>
+    <section id="referencias">
+        <div id="sucursales">
+            <h1 id="sucursalesTitle" class="referenciasTitle">SUCURSALES</h1>
             <div class="sucursal">
-                <i class="fa-solid fa-location-dot"></i><p>Av. Moscú 5to anillo</p>
+                <i class="fa-solid fa-location-dot"></i><span>Av. Moscú 5to anillo</span>
             </div>
             <div class="sucursal">
-                <i class="fa-solid fa-location-dot"></i><p>Av. Busch 4to anillo</p>
+                <i class="fa-solid fa-location-dot"></i><span>Av. Busch 4to anillo</span>
             </div>
             <div class="sucursal">
-                <i class="fa-solid fa-location-dot"></i><p>Av. Beni 3er anillo</p>
+                <i class="fa-solid fa-location-dot"></i><span>Av. Beni 3er anillo</span>
             </div>
         </div>
-        <div class="redesSociales">
-            <h1 class="tituloReferencias">REDES SOCIALES</h1>
+        <div id="redesSociales">
+            <h1 class="referenciasTitle" id="redesSocialesTitle">REDES SOCIALES</h1>
             <div class="redSocial">
-                <i class="fa-brands fa-instagram"></i><p>@TitanIronworks</p>
+                <i class="fa-brands fa-instagram"></i><span> @TitanIronworks<span>
             </div>
             <div class="redSocial">
-                <i class="fa-brands fa-facebook"></i><p>TitanIW</p>
+                <i class="fa-brands fa-facebook"></i><span> TitanIW</span>
             </div>
         </div>
     </section>

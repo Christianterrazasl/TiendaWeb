@@ -53,4 +53,48 @@
     display: none;
 }
 
+@media (width < 1024px){
+    #headerLines{
+        
+    }
+    .headerLineTitle{
+        font-size: 1rem;
+    }
+
+    #bottomHeaderLine{
+        flex-direction: column;  
+        gap: 15px;      
+    }
+
+    #upperHeaderLine .headerLineTitle{
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: #4e4e4e;
+    }
+
+    #bottomHeaderLine .headerLineTitle{
+        border: 1px solid white;
+        width: 80%;
+        text-align: center;
+
+    }
+
+    #upperHeaderLine, #bottomHeaderLine{
+        padding: 10px;
+    
+    }
+
+    #imgCarrito{
+        width: 10%;
+
+    }
+
+
+    #upperHeaderLine{
+        justify-content: end;
+        gap: 2%;
+        align-items: center;
+        padding: 30px;
+    }
+}
 
